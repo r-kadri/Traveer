@@ -26,6 +26,7 @@ CREATE TABLE CountryLanguage(
 
 CREATE TABLE Place(
     id SERIAL PRIMARY KEY,
+    city_id INTEGER NOT NULL,
     name VARCHAR(60),
     description TEXT
 );
