@@ -17,12 +17,7 @@ class Country extends Model
         return $this->hasMany(City::class);
     }
 
-    /**
-     * The languages that belong to the Country
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
-    public function languages(): BelongsToMany
+    public function languages()
     {
         return $this->belongsToMany(Language::class);
     }

@@ -12,12 +12,7 @@ class Language extends Model
 
     public $timestamps = false;
 
-    /**
-     * The countries that belong to the Language
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
-    public function countries(): BelongsToMany
+    public function countries()
     {
         return $this->belongsToMany(Country::class);
     }
