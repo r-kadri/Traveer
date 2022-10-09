@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('name');
             $table->mediumText('description');
             $table->integer('areaKm2');
-            $table->timestamps();
         });
     }
 
