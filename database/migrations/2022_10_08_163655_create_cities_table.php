@@ -15,11 +15,10 @@ return new class extends Migration
     {
         Schema::create('cities', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->unique();
             $table->foreignId('country_id')->constrained();
-            $table->string('name');
             $table->mediumText('description')->nullable();
             $table->decimal('areaKm2', 4, 2)->nullable();
-            $table->timestamps();
 
             //$table->foreign('country_id')->references('id')->on('countries');
         });

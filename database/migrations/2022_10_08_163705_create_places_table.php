@@ -15,10 +15,9 @@ return new class extends Migration
     {
         Schema::create('places', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->unique();
             $table->foreignId('city_id')->constrained();
-            $table->string('name');
             $table->mediumText('description');
-            $table->timestamps();
         });
     }
 
