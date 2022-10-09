@@ -17,7 +17,6 @@ class CountryLanguageSeeder extends Seeder
      */
     public function run()
     {
-        // CountryLanguage::factory(14)->create();
         $languages = Language::all();
 
         // Populate the pivot table
