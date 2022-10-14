@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestController;
+use App\Http\Controllers\CountryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::get('/test', [TestController::class, 'index'])->name('test');
+Route::get('/countries', [CountryController::class, 'index'])->name('countries');
