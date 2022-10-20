@@ -1,4 +1,1 @@
-<ul>
-    <li><a href="{{ route('index') }}">Home</a></li>
-    <li><a href="{{ route('countries') }}">Countries</a></li>
-</ul>
+<li class="nav-item"><a class="nav-link" href="{{ route('countries') }}">Countries</a></li>

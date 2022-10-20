@@ -19,3 +19,6 @@ Route::get('/', function () {
 })->name('index');
 
 Route::get('/countries', [CountryController::class, 'index'])->name('countries');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
