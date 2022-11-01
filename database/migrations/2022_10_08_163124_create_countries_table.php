@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('countries', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->mediumText('description');
+            $table->mediumText('description')->nullable();
             $table->integer('areaKm2');
         });
     }
